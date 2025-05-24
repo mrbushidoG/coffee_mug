@@ -53,11 +53,11 @@ function showMugDetail(mugId) {
     <p>${mug.description}</p>
     <div class="qr-code" id="qrcode-detail"></div>
   `;
-  new QRCode(document.getElementById('qrcode-detail'), {
-    text: window.location.origin + window.location.pathname + `#${mug.id}`,
-    width: 140,
-    height: 140
-  });
+  // new QRCode(document.getElementById('qrcode-detail'), {
+  //   text: window.location.origin + window.location.pathname + `#${mug.id}`,
+  //   width: 140,
+  //   height: 140
+  // });
   document.getElementById('back-link').style.display = 'inline-block';
 }
 
