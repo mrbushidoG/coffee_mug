@@ -53,19 +53,19 @@ function showMugDetail(mugId) {
     <p>${mug.description}</p>
     <div class="qr-code" id="qrcode-detail"></div>
   `;
-  // new QRCode(document.getElementById('qrcode-detail'), {
-  //   text: window.location.origin + window.location.pathname + `#${mug.id}`,
-  //   width: 140,
-  //   height: 140
-  // });
-  document.getElementById('back-link').style.display = 'inline-block';
-}
+//   new QRCode(document.getElementById('qrcode-detail'), {
+//     text: window.location.origin + window.location.pathname + `#${mug.id}`,
+//     width: 140,
+//     height: 140
+//   });
+//   document.getElementById('back-link').style.display = 'inline-block';
+// }
 
-document.getElementById('back-link').onclick = function(e) {
-  e.preventDefault();
-  document.getElementById('mug-detail').style.display = 'none';
-  document.getElementById('main-view').style.display = 'block';
-  this.style.display = 'none';
+// document.getElementById('back-link').onclick = function(e) {
+//   e.preventDefault();
+//   document.getElementById('mug-detail').style.display = 'none';
+//   document.getElementById('main-view').style.display = 'block';
+//   this.style.display = 'none';
 };
 
 // Handle navigation via hash (for barcode scanning)
